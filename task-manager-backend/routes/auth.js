@@ -1,28 +1,22 @@
 const express = require("express");
 const passport = require("passport");
 const router = express.Router();
+const authController = require("../controllers/authController");
 
 router.get(
   "/google",
-  passport.authenticate("google", { scope: ["profile", "email"] })
+  passport.authenticate("google", { scope: ["profile", "email"] }),
+  authController.googleAuth
 );
 
 router.get(
   "/google/callback",
   passport.authenticate("google", { failureRedirect: "/" }),
-  (req, res) => {
-    res.redirect("http://localhost:3000/dashboard"); // frontend URL
-  }
+  authController.googleCallback
 );
 
-router.get("/user", (req, res) => {
-  res.send(req.user);
-});
+router.get("/user", authController.getUser);
 
-router.get("/logout", (req, res) => {
-  req.logout(() => {
-    res.send({ message: "Logged out" });
-  });
-});
+router.get("/logout", authController.logoutUser);
 
 module.exports = router;
