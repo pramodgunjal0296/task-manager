@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "short_name": "Task Manager",
+=======
+  "short_name": "React App",
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
   "name": "Create React App Sample",
   "icons": [
     {

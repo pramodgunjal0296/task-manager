@@ -15,6 +15,7 @@ A full-stack Task Manager application built with **React**, **Node.js**, **Expre
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## 🗂 Folder Structure
 
@@ -40,6 +41,9 @@ project-root/
 =======
 ## 🚀 How to Run the App
 >>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
+=======
+## 🚀 How to Run the App
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
 ### 🐳 Using Docker (Recommended)
 
 1. **Make sure Docker is installed**  
@@ -47,14 +51,20 @@ project-root/
  code path: task-manager/
 docker-compose up --build
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Frontend runs at: http://localhost:3000**
 **Backend runs at: http://localhost:5000**
 
 =======
+=======
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
 
 **Frontend runs at: http://localhost:3000**
 
 **Backend runs at: http://localhost:5000**
+<<<<<<< HEAD
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
+=======
 >>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
 ## Without docker 
 1. Install dependencies for both frontend and backend:
@@ -76,6 +86,7 @@ npm start
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Frontend runs at: http://localhost:3000**
 
 **Backend runs at: http://localhost:5000**
@@ -87,11 +98,16 @@ https://drive.google.com/file/d/1Rwresi4Vw7wNtim4P0SdMh1MCdUoHQh2/view?usp=shari
 
 
 =======
+=======
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
 **backend/ .env file credentials(get this from below url file)**
 
 download below link attached yml file and paste it in root folder of Task-Manager folder
 https://drive.google.com/file/d/1Rwresi4Vw7wNtim4P0SdMh1MCdUoHQh2/view?usp=sharing
 
+<<<<<<< HEAD
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
+=======
 >>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
 ** Backend - API Endpoints**
 All task routes are protected and require login.
@@ -149,7 +165,11 @@ Uses volume for MongoDB persistence
 🧑‍💻 Author
 Developed by Pramod Gunjal(Reactjs developer)
 <<<<<<< HEAD
+<<<<<<< HEAD
 📫 For queries: [pramodgunjal2023@gmail.com]
+=======
+📫 For queries: [pramodgunjal2023@gmail.com]
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
 =======
 📫 For queries: [pramodgunjal2023@gmail.com]
 >>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26

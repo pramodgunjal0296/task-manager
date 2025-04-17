@@ -19,10 +19,18 @@ const TaskForm = ({ onCreate }) => {
   const handleSubmit = () => {
     onCreate({ ...form, dueDate: new Date(form.dueDate) });
     if ({title: "" , description:"" , dueDate :""}) {
+<<<<<<< HEAD
       setValid("Please fill in all required fields.");
     }else{
       setForm({ title: "", description: "", dueDate: "", priority: "Medium" });
       setValid(null);
+=======
+
+      setValid("Please fill in all required fields.");
+     
+    }else{
+      setForm({ title: "", description: "", dueDate: "", priority: "Medium" });
+>>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
 
     }
     setTimeout(() => {
