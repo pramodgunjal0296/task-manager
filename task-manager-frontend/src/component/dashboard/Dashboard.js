@@ -31,13 +31,7 @@ const Dashboard = () => {
     style={{
       display: 'flex',
       flexWrap: 'wrap',
-<<<<<<< HEAD
       flexDirection:'column',
-=======
-      // justifyContent: 'center',
-      flexDirection:'column',
-      // alignItems: 'flex-start',
->>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
       width: '100%',
       minHeight: '100vh',
       gap: '2rem',
@@ -46,11 +40,7 @@ const Dashboard = () => {
     }}
 >
   <div  style={{
-<<<<<<< HEAD
       flex: '1 1 400px', 
-=======
-      flex: '1 1 400px', // grow, shrink, min width
->>>>>>> c9db51c35e882ea8049219aafdb85be709ceca26
       maxWidth: '600px',
     }}>
     <h2>Welcome, {user?.displayName}</h2>
