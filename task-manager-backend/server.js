@@ -23,11 +23,11 @@ app.use(express.json());
 
 app.use(
   session({
-    secret: "your_secret_key", // use a strong secret in production!
+    secret: "your_secret_key",
     resave: false,
     saveUninitialized: false,
     cookie: {
-      maxAge: 24 * 60 * 60 * 1000 // 1 day
+      maxAge: 24 * 60 * 60 * 1000
     }
   })
 );
@@ -35,11 +35,9 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Routes
 app.use("/auth", authRoutes);
 app.use("/tasks", taskRoutes);
 
-// DB Connection
 mongoose
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
