@@ -1,7 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const cookieSession = require("cookie-session");
+const session = require("express-session");
+
 const passport = require("passport");
 const cors = require("cors");
 require("./config/passport");
@@ -21,10 +22,13 @@ app.use(
 app.use(express.json());
 
 app.use(
-  cookieSession({
-    name: "session",
-    keys: ["secret"],
-    maxAge: 24 * 60 * 60 * 1000
+  session({
+    secret: "your_secret_key", // use a strong secret in production!
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      maxAge: 24 * 60 * 60 * 1000 // 1 day
+    }
   })
 );
 
