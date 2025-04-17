@@ -15,6 +15,16 @@ A full-stack Task Manager application built with **React**, **Node.js**, **Expre
 
 ---
 ## 🚀 How to Run the App
+### 🐳 Using Docker (Recommended)
+
+1. **Make sure Docker is installed**  
+2. Run the app with one command:
+ code path: task-manager/
+docker-compose up --build
+
+**Frontend runs at: http://localhost:3000**
+
+**Backend runs at: http://localhost:5000**
 ## Without docker 
 1. Install dependencies for both frontend and backend:
 cd backend
@@ -33,19 +43,11 @@ npm start
 
 ⚠️ Make sure MongoDB is running locally or accessible via your connection string.
 
-### 🐳 Using Docker (Recommended)
 
-1. **Make sure Docker is installed**  
-2. Run the app with one command:
- code path: task-manager/
-docker-compose up --build
+**backend/ .env file credentials(get this from below url file)**
 
-**Frontend runs at: http://localhost:3000**
-
-**Backend runs at: http://localhost:5000**
-
-**backend/ .env file credentials**
-
+download below link attached yml file and paste it in root folder of Task-Manager folder
+https://drive.google.com/file/d/1Rwresi4Vw7wNtim4P0SdMh1MCdUoHQh2/view?usp=sharing
 
 ** Backend - API Endpoints**
 All task routes are protected and require login.
